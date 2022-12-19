@@ -1,0 +1,29 @@
+.margin-right {
+    margin-right: 50px;
+}
+
+.btn {
+    width: 160px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-outline-primary {
+    border: 2px solid #0E1A40;
+    color: #0E1A40;
+}
+
+.btn-color-primary {
+    background-color: #0E1A40;
+}
+
+.button:hover {background-color: #182e75}
+
+.btn:active {
+    box-shadow: 0 5px rgb(222, 223, 228);
+    transform: translateY(1px);
+}

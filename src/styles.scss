@@ -3,6 +3,7 @@
 html,
 body {
   height: 100%;
+  color: #0E1A40;
 }
 body {
   margin: 0;
@@ -13,7 +14,7 @@ body {
   color: #0E1A40;
 }
 
-.green {
+.bronze {
   color: #946B2D;
 }
 
@@ -36,4 +37,9 @@ body {
 
 .align-center {
   text-align: center;
+}
+
+.margin-left {
+  margin-left: 201px;
+  padding-left: 20px;
 }
