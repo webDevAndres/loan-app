@@ -23,8 +23,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import { PaymentsComponent } from './payments/payments.component';
+import { AccruedInterestComponent } from './accrued-interest/accrued-interest.component';
 
 
 
@@ -33,7 +35,9 @@ import { MatIconModule } from '@angular/material/icon';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    PaymentsComponent,
+    AccruedInterestComponent
     ],
   imports: [
     BrowserModule,
@@ -47,7 +51,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
