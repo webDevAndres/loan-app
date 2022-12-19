@@ -33,8 +33,10 @@ export class HomeComponent implements OnInit {
   const monthlyInterest = interest / 100 / 12;
 
 
-  this.monthlyPayment =(loanAmount *(monthlyInterest * Math.pow(monthlyInterest + 1, numOfMonths))) /
+  this.monthlyPayment = (loanAmount *(monthlyInterest * Math.pow(monthlyInterest + 1, numOfMonths))) /
     (Math.pow(1 + monthlyInterest, numOfMonths) - 1);
+
+    this.monthlyPayment = parseFloat(this.monthlyPayment.toFixed(2));
 
   this.interest = this.monthlyPayment * numOfMonths - loanAmount;
 }

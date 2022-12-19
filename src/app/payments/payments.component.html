@@ -2,8 +2,9 @@
     <div>
       Your monthly payment:
     </div>
-    <div>
-      {{ "$" + (payments | number:'000') }}
+    <br>
+    <div class="large-font bronze">
+      {{ "$" + (payments | number:'0.00') }}
     </div>
   </div>
   <br /><br />

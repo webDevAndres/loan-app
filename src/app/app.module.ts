@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { PaymentsComponent } from './payments/payments.component';
+import { AccruedInterestComponent } from './accrued-interest/accrued-interest.component';
 
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -25,8 +27,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { PaymentsComponent } from './payments/payments.component';
-import { AccruedInterestComponent } from './accrued-interest/accrued-interest.component';
+
 
 
 

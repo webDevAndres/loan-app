@@ -1,32 +1,35 @@
 <h1 class="align-center">Loan Application</h1>
-<div fxLayout="row wrap" fxLayoutGap="20px">
+<div class="background-bird" fxLayout="row wrap" fxLayoutGap="20px">
     <div class="loan-form" fxFlex>
       <mat-card>
         <mat-card-title>Calculate Loan</mat-card-title>
 
         <mat-card-content>
           <form fxLayout="column" fxLayoutGap="16px" [formGroup]="loanForm" (ngSubmit)="onSubmit();">
+
+
             <mat-form-field fxFlex appearance="fill">
-             <label for="txtLoanAmount">Loan Amount:</label> <br>
-              <input type="text" name="loanAmount" required id="txtLoanAmount" formControlName="loanAmount"/>
+             <mat-label>Loan Amount:</mat-label> <br>
+              <input type="text" name="loanAmount" required id="txtLoanAmount" matInput formControlName="loanAmount"/>
               <span id="txtLoanAmountError"></span>
             </mat-form-field>
 
             <mat-form-field fxFlex appearance="fill">
-              <label for="txtInterestRate">Interest Rate:</label> <br>
-              <input type="text" name="interestRate" required id="txtInterestRate" formControlName="interestRate"/>
+              <mat-label>Interest Rate:</mat-label> <br>
+              <input type="text" name="interestRate" required id="txtInterestRate" matInput formControlName="interestRate"/>
               <span id="txtLoanAmountError"></span>
             </mat-form-field>
 
             <mat-form-field fxFlex appearance="fill">
-                <label for="txtYears">Years:</label> <br>
-                <input type="text" name="years" required id="years" formControlName="years"/>
+                <mat-label>Years:</mat-label> <br>
+                <input type="text" name="years" required id="years" matInput formControlName="years"/>
                 <span id="txtLoanAmountError"></span>
               </mat-form-field>
-              <mat-form-field>
-                <button class="margin-right btn btn-outline-primary" type="submit">Submit</button>
-                <button class="btn btn-color-primary" (click)="clearForm ">Reset</button>
-              </mat-form-field>
+
+              <div class="btn-group">
+                <button class="margin-right btn btn-outline-primary">Submit</button>
+                <button class="btn btn-color-primary" (click)="clearForm()">Reset</button>
+              </div>
           </form>
         </mat-card-content>
       </mat-card>
@@ -35,6 +38,7 @@
     <div class="results-summary" fxFlex>
       <mat-card class="mat-elevation-z8">
         <mat-card-title>Results:</mat-card-title>
+        <br>
         <mat-card-content>
           <app-payments [payments]="monthlyPayment"></app-payments>
             <app-accrued-interest [accruedInterest]="interest"></app-accrued-interest>
